@@ -1,6 +1,6 @@
 import pyodbc
 
-connectionString = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:p4passwordmanager.database.windows.net,1433;Database=P4PasswordManager;Uid=P4PasswordManager;Pwd=DetteErKodeordet1;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+connectionString = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:p4passwordmanager.database.windows.net,1433;Database=P4PasswordManager;Uid={Insert_Username};Pwd={Insert_Password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 
 def ConnectToDb():
     conn = pyodbc.connect(connectionString) #Connect to the database using the connectionstring
